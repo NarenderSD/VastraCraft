@@ -10,17 +10,17 @@ export default function Hero() {
 
   const slides = [
     {
-      image: "/hero1.jpg",
+      image: "/hero1.png",
       title: "Perfect Stitch, Perfect Fit",
       subtitle: "Premium Women's Tailoring by Radha",
     },
     {
-      image: "/hero2.jpg",
+      image: "/hero2.png",
       title: "Bridal Couture Specialists",
       subtitle: "Making Your Special Day Perfect",
     },
     {
-      image: "/hero3.jpg",
+      image: "/hero3.png",
       title: "Young, Modern, Confident",
       subtitle: "Tailoring for the Next Generation",
     },

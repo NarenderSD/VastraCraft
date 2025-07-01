@@ -141,3 +141,50 @@ For technical support or customization requests, contact the development team.
 2. Regularly review form submissions for spam
 3. Keep contact information updated
 4. Monitor website performance and security
+
+# Premium Tailoring Website – Setup Instructions
+
+Welcome! Follow these steps to set up the project locally or for deployment.
+
+## 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/premium-tailoring-website.git
+cd premium-tailoring-website
+```
+
+## 2. Install Dependencies
+```bash
+pnpm install
+# or
+npm install
+# or
+yarn install
+```
+
+## 3. Configure Environment Variables
+- Copy `.env.example` to `.env` and fill in your credentials:
+```bash
+cp .env.example .env
+```
+- Edit `.env` with your MongoDB, JWT, and Cloudinary details.
+
+## 4. Run the Project Locally
+```bash
+pnpm dev
+# or
+npm run dev
+# or
+yarn dev
+```
+
+## 5. Deploy
+- Deploy to Vercel, Netlify, or your preferred platform.
+- Set the same environment variables in your deployment dashboard.
+
+## 6. Admin Access
+- Register a new admin at `/admin/register`.
+- Login at `/admin/login`.
+
+---
+
+For any issues, open an issue or contact the maintainer.

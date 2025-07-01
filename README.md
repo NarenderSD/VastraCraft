@@ -1,67 +1,96 @@
-# Premium Tailoring Website
+<p align="center">
+  <img src="public/logo1.png" alt="Premium Tailoring Logo" width="180" />
+</p>
+
+<h1 align="center">Premium Tailoring Website</h1>
 
 <p align="center">
-  <img src="/hero1.jpg" alt="Tailoring Hero 1" width="180" style="margin: 0 10px; border-radius: 12px;" />
-  <img src="/hero2.jpg" alt="Tailoring Hero 2" width="180" style="margin: 0 10px; border-radius: 12px;" />
-  <img src="/hero3.jpg" alt="Tailoring Hero 3" width="180" style="margin: 0 10px; border-radius: 12px;" />
+  <img src="https://img.shields.io/github/workflow/status/your-username/premium-tailoring-website/CI?label=Build&style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/license/your-username/premium-tailoring-website?style=for-the-badge&logo=open-source-initiative" />
+  <img src="https://img.shields.io/github/stars/your-username/premium-tailoring-website?style=for-the-badge&logo=star" />
+  <img src="https://img.shields.io/github/issues/your-username/premium-tailoring-website?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/github/pulls/your-username/premium-tailoring-website?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Deployed-Vercel-000?style=for-the-badge&logo=vercel" />
 </p>
 
 ---
 
-## ✨ Premium Tailoring Website
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=E11D48&center=true&vCenter=true&width=700&lines=Premium+Tailoring+for+Modern+India;Business-Ready+Admin+Dashboard;Live+Bookings+%7C+Portfolio+%7C+Testimonials;Built+for+Growth+and+Creativity"/>
+</div>
 
-A modern, professional, and fully responsive website for a premium Indian tailoring boutique. Built for real-world business, this site is designed to impress, engage, and convert clients with a beautiful user experience and advanced technology.
+---
+
+## ✨ About Premium Tailoring Website
+
+Welcome to the next generation of Indian tailoring business websites! This project is a **premium, professional, and creative platform** for bespoke tailoring studios, designed to impress clients and empower business owners.
+
+- 🧵 **Modern, elegant UI** with real business branding
+- 🛠️ **Admin dashboard** for live management of bookings, portfolio, testimonials, content, and images
+- 🔒 **Secure authentication** for admins and users
+- 📱 **Mobile-first, responsive, and lightning-fast**
+- 🌐 **SEO-optimized** and ready for real-world deployment
+- ☁️ **Cloud image management** (Cloudinary)
+- 🇮🇳 **Tailored for Indian fashion and culture**
 
 ---
 
 ## 🚀 Features
 
-- 👗 **Stunning Hero Section:** Real, premium images and animated slider.
-- 🧵 **About Radha:** Inspiring story of a young, modern entrepreneur.
-- 🪡 **Services:** Showcase of all tailoring services with beautiful cards.
-- 📸 **Portfolio:** Gallery of past work, filterable by category, with premium branding.
-- 💍 **Bridal & Boutique:** Special focus on bridal and ethnic wear.
-- 💰 **Pricing:** Transparent, easy-to-read pricing tables.
-- 📅 **Booking:** Online appointment booking form.
-- 📝 **Blog:** Fashion tips, news, and updates.
-- 📞 **Contact:** Contact form, map, and business info.
-- 📏 **Size Guide:** Helpful guide for customers.
-- 💬 **Floating WhatsApp:** Always-accessible WhatsApp chat button (bottom right, +91 8595962615).
-- 🌟 **Professional Branding:** Custom images and logos throughout the site.
-- 📱 **Fully Responsive:** Looks great on all devices.
+- 🎨 **Stunning Hero Section** with premium images and animated cloth showcase
+- 🖼️ **Portfolio Gallery**: Add, edit, and manage your best work
+- 💬 **Customer Testimonials**: Build trust with real stories
+- 📅 **Live Booking System**: Accept and manage appointments
+- 📝 **Blog & Content Management**: Share tips, trends, and news
+- 📞 **Contact & WhatsApp Integration**: Easy client communication
+- 🛡️ **Admin Panel**: Full CRUD for all business data
+- 🔐 **JWT Auth**: Secure login, registration, and session management
+- ☁️ **Cloudinary Integration**: Fast, reliable image uploads
+- 🏆 **Business-Ready**: Clean code, scalable, and easy to deploy
+
+---
+
+## 🖼️ Screenshots
+
+> _Add your own screenshots here!_
+
+| Home Page | Admin Dashboard | Booking Flow |
+|-----------|----------------|-------------|
+| ![](public/hero1.png) | ![](public/hero2.png) | ![](public/hero3.png) |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- ⚡ **Framework:** [Next.js](https://nextjs.org/)
-- 🎨 **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- 🧩 **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
-- 🟦 **TypeScript:** [TypeScript](https://www.typescriptlang.org/)
-- 📦 **Package Manager:** [pnpm](https://pnpm.io/)
-- 🖼️ **Image Optimization:** [next/image](https://nextjs.org/docs/api-reference/next/image)
-- ☁️ **Deployment:** [Vercel](https://vercel.com/) ready
+- ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)
+- ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)
+- ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?logo=cloudinary&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwindcss&logoColor=white)
+- ![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white)
+- ![JWT](https://img.shields.io/badge/JWT-000?logo=jsonwebtokens&logoColor=white)
 
 ---
 
-## 📸 Screenshots
+## 📦 Project Structure
 
-<p align="center">
-  <img src="/hero1.jpg" alt="Tailoring Hero 1" width="300" style="margin: 0 10px; border-radius: 12px;" />
-  <img src="/hero2.jpg" alt="Tailoring Hero 2" width="300" style="margin: 0 10px; border-radius: 12px;" />
-  <img src="/hero3.jpg" alt="Tailoring Hero 3" width="300" style="margin: 0 10px; border-radius: 12px;" />
-</p>
+```
+app/
+  ├── admin/           # Admin dashboard (login, register, managers)
+  ├── api/             # All backend API routes (auth, bookings, portfolio, etc.)
+  ├── ...              # Frontend pages (home, about, portfolio, etc.)
+components/            # UI and business components
+public/                # Images, logos, and static assets
+styles/                # Global styles (Tailwind)
+.env.example           # Environment variable template
+SETUP_INSTRUCTIONS.md  # Full setup guide
+```
 
 ---
 
-## ⚡ Getting Started
+## ⚡ Quick Start
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v18+)
-- [pnpm](https://pnpm.io/installation)
-
-### Installation
-1. **Clone the repository:**
+1. **Clone the repo:**
    ```bash
    git clone https://github.com/your-username/premium-tailoring-website.git
    cd premium-tailoring-website
@@ -69,46 +98,72 @@ A modern, professional, and fully responsive website for a premium Indian tailor
 2. **Install dependencies:**
    ```bash
    pnpm install
+   # or
+   npm install
+   # or
+   yarn install
    ```
-
-### Development
-Run the development server:
-```bash
-pnpm dev
-```
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Production Build
-```bash
-pnpm build
-pnpm start
-```
-
----
-
-## 🌟 Customization & Deployment
-- **Replace Content:** Update text, images, and service details as per your business.
-- **Google Sheets Integration:** See `GOOGLE_SHEETS_SETUP_GUIDE.md` for booking integration.
-- **Environment Variables:** Use `.env.local` for secrets (never commit this file).
-- **Deploy:** Deploy easily to [Vercel](https://vercel.com/) or any Next.js-compatible host.
+3. **Setup environment:**
+   - Copy `.env.example` to `.env` and fill in your credentials
+   - See [SETUP_INSTRUCTIONS.md](./SETUP_INSTRUCTIONS.md) for full details
+4. **Run locally:**
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
+5. **Deploy:**
+   - Deploy to Vercel, Netlify, or your preferred platform
+   - Set the same environment variables in your deployment dashboard
 
 ---
 
-## 🖼️ Image Credits
-- All hero images are premium, professional, and copyright-free, provided by the owner.
+## 🔑 Environment Variables
+
+See [.env.example](./.env.example) for all required variables:
+- `MONGO_URI` – MongoDB connection string
+- `JWT_SECRET` – JWT secret for authentication
+- `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET` – Cloudinary credentials
+
+---
+
+## 👩‍💻 Admin & API
+
+- **Register:** `/admin/register`
+- **Login:** `/admin/login`
+- **Dashboard:** `/admin`
+- **API:** All endpoints under `/api/` (RESTful, secure)
 
 ---
 
 ## 🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repo and create a feature branch
+2. Make your changes and submit a pull request
+3. For local setup, see [SETUP_INSTRUCTIONS.md](./SETUP_INSTRUCTIONS.md)
 
 ---
 
-## 👤 Connect with the Creator
+## 🙏 Credits & Acknowledgments
 
-- **Build by [Narender Singh](https://www.linkedin.com/in/narendersingh1/)**
+- All images are copyright-free or provided by the owner
+- Built with ❤️ using Next.js, MongoDB, and Tailwind CSS
+- Inspired by the best of Indian tailoring and global design
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License. 
+## 📝 License
+
+MIT
+
+---
+
+<p align="center" style="font-size: 1.2em; font-weight: bold; color: #e11d48;">
+  Built by <a href="https://www.linkedin.com/in/narender-singh-1b1b1b1b/" target="_blank">Narender Singh</a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=E11D48&center=true&vCenter=true&width=600&lines=Premium+Tailoring+for+the+Next+Generation!"/>
+</p> 

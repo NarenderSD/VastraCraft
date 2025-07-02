@@ -91,13 +91,13 @@ SETUP_INSTRUCTIONS.md  # Full setup guide
 ## ⚡ Quick Start
 
 1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/your-username/premium-tailoring-website.git
-   cd premium-tailoring-website
-   ```
+    ```bash
+    git clone https://github.com/your-username/premium-tailoring-website.git
+    cd premium-tailoring-website
+    ```
 2. **Install dependencies:**
-   ```bash
-   pnpm install
+    ```bash
+    pnpm install
    # or
    npm install
    # or
@@ -107,8 +107,8 @@ SETUP_INSTRUCTIONS.md  # Full setup guide
    - Copy `.env.example` to `.env` and fill in your credentials
    - See [SETUP_INSTRUCTIONS.md](./SETUP_INSTRUCTIONS.md) for full details
 4. **Run locally:**
-   ```bash
-   pnpm dev
+```bash
+pnpm dev
    # or
    npm run dev
    # or

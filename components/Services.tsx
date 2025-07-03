@@ -15,7 +15,7 @@ export default function Services() {
       title: "Blouse Stitching",
       description: "Perfect fitting blouses with intricate designs and premium finishing",
       features: ["Custom measurements", "Designer patterns", "Premium fabrics", "Quick delivery"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/Blouse Stitching.png",
       price: "Starting ₹800",
     },
     {
@@ -23,7 +23,7 @@ export default function Services() {
       title: "Suit & Salwar",
       description: "Traditional and contemporary suits tailored to perfection",
       features: ["Traditional designs", "Modern cuts", "Comfortable fit", "Quality assurance"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/c4.png",
       price: "Starting ₹1200",
     },
     {
@@ -31,7 +31,7 @@ export default function Services() {
       title: "Bridal Wear",
       description: "Exquisite bridal outfits for your special day",
       features: ["Luxury fabrics", "Intricate embroidery", "Perfect fit guarantee", "Bridal consultation"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/c1.png",
       price: "Starting ₹5000",
     },
     {
@@ -39,7 +39,7 @@ export default function Services() {
       title: "Lehenga Choli",
       description: "Stunning lehengas for weddings and special occasions",
       features: ["Designer patterns", "Custom embellishments", "Perfect draping", "Size adjustments"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/c3.png",
       price: "Starting ₹3000",
     },
     {
@@ -47,7 +47,7 @@ export default function Services() {
       title: "Kids Clothing",
       description: "Comfortable and stylish clothing for children",
       features: ["Soft fabrics", "Comfortable designs", "Growth adjustments", "Fun patterns"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/c12 kid.png",
       price: "Starting ₹500",
     },
     {
@@ -55,7 +55,7 @@ export default function Services() {
       title: "Alterations",
       description: "Professional alterations and repairs for all garments",
       features: ["Size adjustments", "Style modifications", "Repair services", "Quick turnaround"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/c13.png",
       price: "Starting ₹200",
     },
   ]

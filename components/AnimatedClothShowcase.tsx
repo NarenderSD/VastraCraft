@@ -11,7 +11,7 @@ export default function AnimatedClothShowcase() {
     {
       id: 1,
       name: "Traditional Silk Saree Blouse",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/c1.png",
       era: "Traditional",
       color: "from-yellow-400 to-orange-500",
       pattern: "Intricate Gold Embroidery",
@@ -19,7 +19,7 @@ export default function AnimatedClothShowcase() {
     {
       id: 2,
       name: "Modern Crop Top Blouse",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/c3.png",
       era: "Modern",
       color: "from-pink-400 to-purple-500",
       pattern: "Contemporary Cut",
@@ -27,7 +27,7 @@ export default function AnimatedClothShowcase() {
     {
       id: 3,
       name: "Royal Bridal Lehenga",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/c5.png",
       era: "Bridal",
       color: "from-red-500 to-rose-600",
       pattern: "Heavy Zardozi Work",
@@ -35,10 +35,18 @@ export default function AnimatedClothShowcase() {
     {
       id: 4,
       name: "Designer Anarkali Suit",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/c9.png",
       era: "Fusion",
       color: "from-blue-400 to-cyan-500",
       pattern: "Mirror & Thread Work",
+    },
+    {
+      id: 5,
+      name: "Western Gown",
+      image: "/c13.png",
+      era: "Modern/Western",
+      color: "from-purple-400 to-pink-500",
+      pattern: "Minimalist Silhouette",
     },
   ]
 

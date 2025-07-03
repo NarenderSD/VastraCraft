@@ -59,7 +59,7 @@ export default function About() {
             </div>
             <div className="relative">
               <Image
-                src="/logo3.png"
+                src="/c13.png"
                 alt="Radha - Young Tailor"
                 width={500}
                 height={600}
@@ -76,7 +76,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/logo3.png"
+                src="/c13.png"
                 alt="Radha - Founder"
                 width={400}
                 height={500}
@@ -195,12 +195,12 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Sushma Devi", role: "Founder & Master Tailor", experience: "30+ Years" },
-              { name: "Priya Sharma", role: "Senior Designer", experience: "15+ Years" },
-              { name: "Anita Gupta", role: "Bridal Specialist", experience: "12+ Years" },
-              { name: "Meera Patel", role: "Pattern Maker", experience: "10+ Years" },
-              { name: "Sunita Devi", role: "Quality Controller", experience: "8+ Years" },
-              { name: "Kavya Singh", role: "Customer Relations", experience: "5+ Years" },
+              { name: "Sushma Devi", role: "Founder & Master Tailor", experience: "30+ Years", image: "/c7.png" },
+              { name: "Priya Sharma", role: "Senior Designer", experience: "15+ Years", image: "/c2.png" },
+              { name: "Anita Gupta", role: "Bridal Specialist", experience: "12+ Years", image: "/c4.png" },
+              { name: "Meera Patel", role: "Pattern Maker", experience: "10+ Years", image: "/c3.png" },
+              { name: "Sunita Devi", role: "Quality Controller", experience: "8+ Years", image: "/c9.png" },
+              { name: "Kavya Singh", role: "Customer Relations", experience: "5+ Years", image: "/c12 kid.png" },
             ].map((member, index) => (
               <div
                 key={index}
@@ -208,7 +208,7 @@ export default function About() {
               >
                 <div className="aspect-[4/5] relative">
                   <Image
-                    src={`/placeholder.svg?height=400&width=300`}
+                    src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover"

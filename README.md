@@ -24,36 +24,24 @@
 
 ---
 
-## 📚 Table of Contents
-- [Live Demo](#-live-demo)
-- [Demo Video](#-demo-video)
-- [Why Choose This Product?](#-why-choose-this-product)
-- [Business Value](#-business-value)
-- [Animated Feature Grid](#-animated-feature-grid)
-- [Screenshots](#-screenshots)
-- [User Stories](#-user-stories)
-- [Social Proof](#-social-proof)
-- [How it Works](#-how-it-works)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Architecture Diagram](#-architecture-diagram)
-- [Admin Dashboard](#-admin-dashboard)
-- [PDF Export](#-pdf-export)
-- [Contact & WhatsApp](#-contact--whatsapp)
-- [Mobile Experience](#-mobile-experience)
-- [Performance](#-performance)
-- [Security](#-security)
-- [Setup & Deployment](#-setup--deployment)
-- [FAQ](#-faq)
-- [Roadmap](#-roadmap)
-- [Changelog](#-changelog)
-- [Contributing](#-contributing)
-- [License & Usage](#-license--usage)
-- [Credits](#-credits)
-- [Team](#-team)
-- [Push to GitHub](#-push-to-github)
-- [Contact & Support](#-contact--support)
-- [Thanks](#-thanks)
+<div align="center">
+
+| 📚 **Table of Contents** |
+|:------------------------:|
+
+| [🚀 Live Demo](#-live-demo) | [🎥 Demo Video](#-demo-video) | [💎 Why Choose This Product?](#-why-choose-this-product) |
+|--------------------------|-------------------------------|-----------------------------------------------|
+| [💼 Business Value](#-business-value) | [🧩 Animated Feature Grid](#-animated-feature-grid) | [🖼️ Screenshots](#-screenshots) |
+| [👥 User Stories](#-user-stories) | [🌟 Social Proof](#-social-proof) | [🛠️ How it Works](#-how-it-works) |
+| [🛠️ Tech Stack](#-tech-stack) | [🏗️ Project Structure](#-project-structure) | [🗺️ Architecture Diagram](#-architecture-diagram) |
+| [🛡️ Admin Dashboard](#-admin-dashboard) | [📄 PDF Export](#-pdf-export) | [📞 Contact & WhatsApp](#-contact--whatsapp) |
+| [📱 Mobile Experience](#-mobile-experience) | [⚡ Performance](#-performance) | [🔒 Security](#-security) |
+| [⚡ Setup & Deployment](#-setup--deployment) | [❓ FAQ](#-faq) | [🗺️ Roadmap](#-roadmap) |
+| [📝 Changelog](#-changelog) | [🤝 Contributing](#-contributing) | [🔑 License & Usage](#-license--usage) |
+| [🙏 Credits](#-credits) | [👨‍💻 Team](#-team) | [🚀 Push to GitHub](#-push-to-github) |
+| [💬 Contact & Support](#-contact--support) | [🙏 Thanks](#-thanks) | [⚖️ Legal Notice](#-legal-notice) |
+
+</div>
 
 ---
 
@@ -100,13 +88,50 @@
 
 ## 🖼️ Screenshots
 
-> Add a real screenshot for every major page below! For extra effect, use animated GIFs or short video clips to show interactivity and animation.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="public/hero.png" alt="Home Page" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Home</b></div>
+      </td>
+      <td align="center">
+        <img src="public/services.png" alt="Services Page" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Services</b></div>
+      </td>
+      <td align="center">
+        <img src="public/booking.png" alt="Booking Page" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Booking</b></div>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="public/portfolio.png" alt="Portfolio Page" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Portfolio</b></div>
+      </td>
+      <td align="center">
+        <img src="public/contact.png" alt="Contact Page" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Contact</b></div>
+      </td>
+      <td align="center">
+        <img src="public/admin.png" alt="Admin Dashboard" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Admin Dashboard</b></div>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="public/size.png" alt="Size Tool" width="320" style="border-radius:16px;box-shadow:0 4px 24px #e11d48;"/>
+        <div><b>Size Tool</b></div>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
 
-| Home | Services | Booking | Portfolio | Contact | Admin Dashboard | Size Tool |
-|------|----------|---------|-----------|---------|----------------|-------------|
-| ![](public/hero.png) | ![](public/services.png) | ![](public/booking.png) | ![](public/portfolio.png) | ![](public/contact.png) | ![](public/admin.png) | ![](public/size.png) |
-
-<!-- <sub>_Tip: Use high-quality, full-width screenshots. For animated sections, consider using GIFs or video for a more dynamic showcase!_</sub> -->
+<div align="center" style="color:#e11d48;font-weight:bold;margin-top:1em;">
+  All screenshots and content are original and must not be reused, copied, or modified without written permission from Narender Singh.
+</div>
 
 ---
 
@@ -356,4 +381,37 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## 🚀 Push to GitHub
 
 1. **Stage all changes:**
+    ```bash
+    git add .
     ```
+2. **Commit:**
+    ```bash
+    git commit -m "Your Update"
+    ```
+3. **Push:**
+    ```bash
+    git push origin main
+    ```
+
+---
+
+## 💬 Contact & Support
+
+For questions, support, or business inquiries, contact [Narender Singh on LinkedIn](https://www.linkedin.com/in/narender-singh-1b7b2b1b2/).
+
+---
+
+## 🙏 Thanks
+
+Thank you for using and supporting Premium Tailoring Website! If you love it, please star the repo and share with others.
+
+---
+
+## ⚖️ Legal Notice
+
+<div align="center" style="color:#e11d48;font-weight:bold;margin-top:1em;">
+This README, all screenshots, and all content are copyright © Narender Singh.<br>
+Strictly no reuse, copying, or modification without written permission.
+</div>
+
+---

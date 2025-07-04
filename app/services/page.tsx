@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Scissors, Shirt, Crown, Baby, Wrench, Star, Clock, Shield } from "lucide-react"
+import Link from "next/link";
 
 export default function Services() {
   const services = [
@@ -178,12 +179,16 @@ export default function Services() {
                     </div>
 
                     <div className="flex gap-3">
-                      <Button className="flex-1 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700">
-                        Book Now
-                      </Button>
-                      <Button variant="outline" className="flex-1">
-                        Get Quote
-                      </Button>
+                      <Link href="/booking" passHref legacyBehavior>
+                        <Button as="a" className="flex-1 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700">
+                          Book Now
+                        </Button>
+                      </Link>
+                      <Link href="/booking" passHref legacyBehavior>
+                        <Button variant="outline" className="flex-1">
+                          Get Quote
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>

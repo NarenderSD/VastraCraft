@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Check, Star, Clock, Shield } from "lucide-react"
+import Link from 'next/link';
 
 export default function Pricing() {
   const pricingPlans = [
@@ -365,13 +366,15 @@ export default function Pricing() {
             <Button size="lg" className="bg-white text-rose-600 hover:bg-gray-100 px-8">
               Book Appointment
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-rose-600 px-8"
-            >
-              Get Custom Quote
-            </Button>
+            <Link href="/booking" passHref legacyBehavior>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-rose-600 px-8"
+              >
+                Get Custom Quote
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

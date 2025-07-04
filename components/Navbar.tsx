@@ -56,10 +56,12 @@ export default function Navbar() {
               <Phone className="w-3 h-3 mr-1" />
               Call Now
             </Button>
-            <Button size="sm" className="bg-white text-rose-600 hover:bg-rose-50 text-xs px-4 py-1 h-8 font-semibold">
-              <Calendar className="w-3 h-3 mr-1" />
-              Book Now
-            </Button>
+            <Link href="/booking" passHref legacyBehavior>
+              <Button as="a" size="sm" className="bg-white text-rose-600 hover:bg-rose-50 text-xs px-4 py-1 h-8 font-semibold">
+                <Calendar className="w-3 h-3 mr-1" />
+                Book Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -75,7 +77,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="relative">
-                <img src="/logo1.png" alt="Premium Tailoring Logo" className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300 object-cover" />
+                <img src="/logo2.png" alt="Premium Tailoring Logo" className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300 object-cover" />
               </div>
               <div className="hidden sm:block">
                 <h1 className="font-playfair text-2xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">

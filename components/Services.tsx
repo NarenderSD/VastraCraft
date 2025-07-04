@@ -5,9 +5,11 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Scissors, Shirt, Crown, Baby, Wrench } from "lucide-react"
+import Link from "next/link";
 
 export default function Services() {
   const [activeService, setActiveService] = useState(0)
+  const [loading, setLoading] = useState(false); // Example loading state
 
   const services = [
     {
@@ -60,6 +62,15 @@ export default function Services() {
     },
   ]
 
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-[300px]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-rose-500 border-opacity-30"></div>
+        <span className="ml-4 text-rose-500 font-semibold text-lg">Loading services...</span>
+      </div>
+    );
+  }
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,12 +111,15 @@ export default function Services() {
                   </ul>
                   <div className="flex items-center justify-between">
                     <span className="font-bold text-rose-600 text-lg">{service.price}</span>
-                    <Button
-                      size="sm"
-                      className="bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600"
-                    >
-                      Book Now
-                    </Button>
+                    <Link href="/booking" passHref legacyBehavior>
+                      <Button
+                        size="sm"
+                        className="bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600"
+                        as="a"
+                      >
+                        Book Now
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -143,9 +157,11 @@ export default function Services() {
               </div>
               <div className="flex items-center justify-between">
                 <span className="font-playfair text-2xl font-bold text-rose-600">{services[activeService].price}</span>
-                <Button className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 px-8">
-                  Get Quote
-                </Button>
+                <Link href="/booking" passHref legacyBehavior>
+                  <Button className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 px-8">
+                    Get Quote
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

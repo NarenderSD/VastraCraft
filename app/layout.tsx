@@ -4,6 +4,7 @@ import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import Head from "next/head"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -39,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <Head>
+        <link rel="icon" href="/logo1.png" type="image/png" />
+      </Head>
       <body className="font-inter antialiased">
         <Navbar />
         {children}

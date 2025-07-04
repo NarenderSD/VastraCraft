@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Star, Award, Users, Clock, Scissors, Sparkles } from "lucide-react"
+import Link from "next/link";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -97,11 +98,10 @@ export default function Hero() {
               <Star className="w-5 h-5 text-yellow-400 animate-spin" />
             </div>
 
-            <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight animate-slideInUp">
+            <h1 className="font-playfair text-2xl xs:text-3xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight animate-slideInUp px-2 break-words">
               <span className="block animate-typewriter">{slides[currentSlide].title}</span>
             </h1>
-
-            <p className="text-2xl sm:text-3xl text-rose-100 font-light animate-slideInUp delay-300">
+            <p className="text-base xs:text-lg sm:text-2xl md:text-3xl text-rose-100 font-light animate-slideInUp delay-300 px-2 max-w-xs xs:max-w-md sm:max-w-2xl mx-auto">
               {slides[currentSlide].subtitle}
             </p>
           </div>
@@ -143,24 +143,29 @@ export default function Hero() {
 
           {/* CTA Buttons with Enhanced Animation */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slideInUp delay-700">
-            <Button
-              size="lg"
-              className="group bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-rose-500/25 transform hover:scale-105 transition-all duration-500 border-2 border-white/20 hover:border-white/40"
-            >
-              <span className="mr-2">✨</span>
-              Book Appointment Now
-              <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
-            </Button>
-
-            <Button
-              variant="outline"
-              size="lg"
-              className="group border-2 border-white/60 text-white hover:bg-white hover:text-rose-600 px-10 py-5 text-xl font-semibold backdrop-blur-sm hover:backdrop-blur-md transform hover:scale-105 transition-all duration-500"
-            >
-              <span className="mr-2">👗</span>
-              View Our Work
-              <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
-            </Button>
+            <Link href="/booking" passHref legacyBehavior>
+              <Button
+                as="a"
+                size="lg"
+                className="group bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-rose-500/25 transform hover:scale-105 transition-all duration-500 border-2 border-white/20 hover:border-white/40"
+              >
+                <span className="mr-2">✨</span>
+                Book Now
+                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </Button>
+            </Link>
+            <Link href="/portfolio" passHref legacyBehavior>
+              <Button
+                as="a"
+                variant="outline"
+                size="lg"
+                className="group border-2 border-white/60 text-white hover:bg-white hover:text-rose-600 px-10 py-5 text-xl font-semibold backdrop-blur-sm hover:backdrop-blur-md transform hover:scale-105 transition-all duration-500"
+              >
+                <span className="mr-2">👗</span>
+                View Our Work
+                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

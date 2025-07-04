@@ -91,55 +91,57 @@ export default function BookingManager() {
         </button>
       </form>
       {error && <div style={{ color: 'red', marginBottom: 12 }}>{error}</div>}
-      <table border="1" cellPadding="8" style={{ width: '100%', borderCollapse: 'collapse' }}>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Service</th>
-            <th>Date</th>
-            <th>Message</th>
-            <th>Status</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bookings.map((b) => (
-            <tr key={b._id}>
-              {editId === b._id ? (
-                <>
-                  <td><input value={editFields.name} onChange={e => setEditFields(f => ({ ...f, name: e.target.value }))} /></td>
-                  <td><input value={editFields.email} onChange={e => setEditFields(f => ({ ...f, email: e.target.value }))} /></td>
-                  <td><input value={editFields.phone} onChange={e => setEditFields(f => ({ ...f, phone: e.target.value }))} /></td>
-                  <td><input value={editFields.service} onChange={e => setEditFields(f => ({ ...f, service: e.target.value }))} /></td>
-                  <td><input value={editFields.date} onChange={e => setEditFields(f => ({ ...f, date: e.target.value }))} type="date" /></td>
-                  <td><input value={editFields.message} onChange={e => setEditFields(f => ({ ...f, message: e.target.value }))} /></td>
-                  <td><input value={editFields.status} onChange={e => setEditFields(f => ({ ...f, status: e.target.value }))} /></td>
-                  <td>
-                    <button onClick={() => saveEdit(b._id)} style={{ marginRight: 8 }}>Save</button>
-                    <button onClick={cancelEdit}>Cancel</button>
-                  </td>
-                </>
-              ) : (
-                <>
-                  <td>{b.name}</td>
-                  <td>{b.email}</td>
-                  <td>{b.phone}</td>
-                  <td>{b.service}</td>
-                  <td>{b.date ? new Date(b.date).toLocaleDateString() : ''}</td>
-                  <td>{b.message}</td>
-                  <td>{b.status}</td>
-                  <td>
-                    <button onClick={() => startEdit(b)} style={{ marginRight: 8 }}>Edit</button>
-                    <button onClick={() => handleDelete(b._id)}>Delete</button>
-                  </td>
-                </>
-              )}
+      <div className="overflow-x-auto">
+        <table className="min-w-full border border-gray-200 rounded-lg shadow">
+          <thead>
+            <tr className="bg-gradient-to-r from-rose-100 to-pink-100 text-gray-800">
+              <th className="px-4 py-2 border">Name</th>
+              <th className="px-4 py-2 border">Email</th>
+              <th className="px-4 py-2 border">Phone</th>
+              <th className="px-4 py-2 border">Service</th>
+              <th className="px-4 py-2 border">Date</th>
+              <th className="px-4 py-2 border">Message</th>
+              <th className="px-4 py-2 border">Status</th>
+              <th className="px-4 py-2 border">Actions</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {bookings.map((b) => (
+              <tr key={b._id} className="even:bg-rose-50 hover:bg-pink-50 transition-colors">
+                {editId === b._id ? (
+                  <>
+                    <td><input value={editFields.name || ""} onChange={e => setEditFields(f => ({ ...f, name: e.target.value }))} className="border rounded px-2 py-1 w-full" /></td>
+                    <td><input value={editFields.email || ""} onChange={e => setEditFields(f => ({ ...f, email: e.target.value }))} className="border rounded px-2 py-1 w-full" /></td>
+                    <td><input value={editFields.phone || ""} onChange={e => setEditFields(f => ({ ...f, phone: e.target.value }))} className="border rounded px-2 py-1 w-full" /></td>
+                    <td><input value={editFields.service || ""} onChange={e => setEditFields(f => ({ ...f, service: e.target.value }))} className="border rounded px-2 py-1 w-full" /></td>
+                    <td><input value={editFields.date || ""} onChange={e => setEditFields(f => ({ ...f, date: e.target.value }))} type="date" className="border rounded px-2 py-1 w-full" /></td>
+                    <td><input value={editFields.message || ""} onChange={e => setEditFields(f => ({ ...f, message: e.target.value }))} className="border rounded px-2 py-1 w-full" /></td>
+                    <td><input value={editFields.status || ""} onChange={e => setEditFields(f => ({ ...f, status: e.target.value }))} className="border rounded px-2 py-1 w-full" /></td>
+                    <td>
+                      <button onClick={() => saveEdit(b._id)} className="mr-2 px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">Save</button>
+                      <button onClick={cancelEdit} className="px-3 py-1 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Cancel</button>
+                    </td>
+                  </>
+                ) : (
+                  <>
+                    <td>{b.name}</td>
+                    <td>{b.email}</td>
+                    <td>{b.phone}</td>
+                    <td>{b.service}</td>
+                    <td>{b.date ? new Date(b.date).toLocaleDateString() : ''}</td>
+                    <td>{b.message}</td>
+                    <td>{b.status}</td>
+                    <td>
+                      <button onClick={() => startEdit(b)} className="mr-2 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">Edit</button>
+                      <button onClick={() => handleDelete(b._id)} className="px-3 py-1 bg-rose-500 text-white rounded hover:bg-rose-600">Delete</button>
+                    </td>
+                  </>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 } 

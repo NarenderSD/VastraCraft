@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Scissors } from "lucide-react"
+import { jsPDF } from "jspdf";
 
 export default function Booking() {
   const [step, setStep] = useState(1)
@@ -113,24 +114,22 @@ export default function Booking() {
 
   const handleSubmit = async () => {
     try {
-      // Google Sheets integration would go here
-      const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE"
-
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
+      const response = await fetch("/api/bookings", {
         method: "POST",
-        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           ...bookingData,
-          timestamp: new Date().toISOString(),
-          type: "booking",
+          createdAt: new Date().toISOString(),
           status: "pending",
         }),
       })
-
-      setStep(5) // Success step
+      if (response.ok) {
+        setStep(5) // Success step
+      } else {
+        throw new Error("Failed to submit booking")
+      }
     } catch (error) {
       console.error("Error submitting booking:", error)
     }
@@ -143,6 +142,85 @@ export default function Booking() {
   const prevStep = () => {
     if (step > 1) setStep(step - 1)
   }
+
+  // PDF generation for booking slip
+  const downloadBookingSlip = () => {
+    const doc = new jsPDF({ unit: 'pt', format: 'a4' });
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    // Faint background
+    doc.setFillColor(255, 245, 250);
+    doc.rect(0, 0, pageWidth, pageHeight, 'F');
+    // Header background
+    doc.setFillColor(255, 230, 236);
+    doc.rect(0, 0, pageWidth, 70, 'F');
+    // Logo
+    const logoUrl = window.location.origin + '/logo1.png';
+    try {
+      doc.addImage(logoUrl, 'PNG', 32, 18, 32, 32);
+    } catch (e) {}
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(28);
+    doc.setTextColor(244, 63, 94);
+    doc.text('Premium Tailoring', pageWidth / 2, 44, { align: 'center' });
+    // Booking Confirmation Heading
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(20);
+    doc.setTextColor(60, 60, 60);
+    doc.text('Booking Confirmation', pageWidth / 2, 100, { align: 'center' });
+    let y = 130;
+    // User Info
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(14);
+    doc.setTextColor(100, 100, 100);
+    doc.text(`Name: ${bookingData.name}`, 60, y);
+    y += 22;
+    doc.text(`Phone: ${bookingData.phone}`, 60, y);
+    y += 22;
+    if (bookingData.email) { doc.text(`Email: ${bookingData.email}`, 60, y); y += 22; }
+    if (bookingData.address) { doc.text(`Address: ${bookingData.address}`, 60, y); y += 22; }
+    // Service Info
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(15);
+    doc.setTextColor(60, 60, 60);
+    doc.text('Service Details:', 60, y);
+    y += 20;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(14);
+    doc.setTextColor(100, 100, 100);
+    doc.text(`Service: ${bookingData.service}`, 80, y);
+    y += 18;
+    if (bookingData.subService) { doc.text(`Sub-Service: ${bookingData.subService}`, 80, y); y += 18; }
+    if (bookingData.urgency) { doc.text(`Urgency: ${bookingData.urgency}`, 80, y); y += 18; }
+    if (bookingData.appointmentType) { doc.text(`Appointment Type: ${bookingData.appointmentType}`, 80, y); y += 18; }
+    if (bookingData.preferredDate) { doc.text(`Preferred Date: ${bookingData.preferredDate}`, 80, y); y += 18; }
+    if (bookingData.preferredTime) { doc.text(`Preferred Time: ${bookingData.preferredTime}`, 80, y); y += 18; }
+    if (bookingData.alternateDate) { doc.text(`Alternate Date: ${bookingData.alternateDate}`, 80, y); y += 18; }
+    if (bookingData.alternateTime) { doc.text(`Alternate Time: ${bookingData.alternateTime}`, 80, y); y += 18; }
+    if (bookingData.measurements) { doc.text(`Measurements: ${bookingData.measurements}`, 80, y); y += 18; }
+    if (bookingData.specialRequirements) { doc.text(`Special Requirements: ${bookingData.specialRequirements}`, 80, y); y += 18; }
+    if (bookingData.fabricDetails) { doc.text(`Fabric Details: ${bookingData.fabricDetails}`, 80, y); y += 18; }
+    if (bookingData.designPreferences) { doc.text(`Design Preferences: ${bookingData.designPreferences}`, 80, y); y += 18; }
+    // Pricing
+    if (bookingData.estimatedPrice) { doc.text(`Estimated Price: ₹${bookingData.estimatedPrice}`, 80, y); y += 18; }
+    // Status
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.setTextColor(60, 60, 60);
+    doc.text(`Status: Pending`, 60, y);
+    y += 24;
+    // Booking Time
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    doc.setTextColor(120, 120, 120);
+    doc.text(`Booking Time: ${new Date().toLocaleString()}`, 60, y);
+    // Footer
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    doc.setTextColor(120, 120, 120);
+    doc.text('Build by Narender Singh  |  premium-tailoring-website.vercel.app', pageWidth / 2, pageHeight - 40, { align: 'center' });
+    doc.save(`Booking_Slip_${bookingData.name || 'user'}.pdf`);
+  };
 
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
@@ -477,29 +555,12 @@ export default function Booking() {
             )}
 
             {step === 5 && (
-              <div className="text-center py-12">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-green-500 rounded-full mb-6">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-4">Booking Confirmed!</h2>
-                <p className="text-lg text-gray-600 mb-8">
-                  Thank you for choosing us. We'll call you within 2 hours to confirm your appointment details.
-                </p>
-                <div className="space-y-4">
-                  <p className="text-sm text-gray-600">
-                    Booking ID: <span className="font-mono font-semibold">BK{Date.now().toString().slice(-6)}</span>
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700">
-                      Download Booking Details
-                    </Button>
-                    <Button variant="outline" onClick={() => (window.location.href = "/")}>
-                      Back to Home
-                    </Button>
-                  </div>
-                </div>
+              <div className="text-center">
+                <h2 className="font-playfair text-2xl font-bold text-green-600 mb-4">Booking Confirmed!</h2>
+                <p className="text-lg text-gray-700 mb-6">Thank you for booking your appointment. We look forward to serving you!</p>
+                <Button onClick={downloadBookingSlip} className="mb-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white">Download Booking Slip (PDF)</Button>
+                <br />
+                <Button onClick={() => setStep(1)} className="bg-gradient-to-r from-rose-500 to-pink-600 text-white">Book Another</Button>
               </div>
             )}
 

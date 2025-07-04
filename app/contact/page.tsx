@@ -24,27 +24,23 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Google Sheets integration would go here
-    // For now, we'll simulate the submission
     try {
-      // Replace this URL with your Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE"
-
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           ...formData,
           timestamp: new Date().toISOString(),
-          type: "contact",
         }),
       })
-
-      setIsSubmitted(true)
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+      if (response.ok) {
+        setIsSubmitted(true)
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+      } else {
+        throw new Error("Failed to submit contact form")
+      }
     } catch (error) {
       console.error("Error submitting form:", error)
     } finally {

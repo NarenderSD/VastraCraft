@@ -1,0 +1,4 @@
+// This is a placeholder instruction. Actual favicon.ico binary replacement or generation from logo1.png is not possible in this text edit. Instead, update the app to use logo1.png as favicon via next/head in layout.tsx.
+// In layout.tsx, add:
+// <link rel="icon" href="/logo1.png" type="image/png" />
+// If you want to use logo2.png, change the href accordingly. 

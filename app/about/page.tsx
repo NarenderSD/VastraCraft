@@ -5,7 +5,7 @@ export default function About() {
   const milestones = [
     { year: "2022", event: "Radha started her tailoring journey at age 18" },
     { year: "2023", event: "Opened her first premium boutique in Delhi" },
-    { year: "2023", event: "Launched online premium tailoring services" },
+    { year: "2023", event: "Launched online VastraCraft services" },
     { year: "2024", event: "Featured in Young Entrepreneurs Magazine" },
     { year: "2024", event: "Serving 1000+ happy clients in just 2 years" },
   ]

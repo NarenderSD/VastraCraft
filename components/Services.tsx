@@ -112,13 +112,13 @@ export default function Services() {
                   <div className="flex items-center justify-between">
                     <span className="font-bold text-rose-600 text-lg">{service.price}</span>
                     <Link href="/booking" passHref legacyBehavior>
-                      <Button
-                        size="sm"
-                        className="bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600"
+                    <Button
+                      size="sm"
+                      className="bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600"
                         as="a"
-                      >
-                        Book Now
-                      </Button>
+                    >
+                      Book Now
+                    </Button>
                     </Link>
                   </div>
                 </CardContent>
@@ -158,9 +158,9 @@ export default function Services() {
               <div className="flex items-center justify-between">
                 <span className="font-playfair text-2xl font-bold text-rose-600">{services[activeService].price}</span>
                 <Link href="/booking" passHref legacyBehavior>
-                  <Button className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 px-8">
-                    Get Quote
-                  </Button>
+                <Button className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 px-8">
+                  Get Quote
+                </Button>
                 </Link>
               </div>
             </div>

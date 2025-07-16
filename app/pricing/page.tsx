@@ -367,13 +367,13 @@ export default function Pricing() {
               Book Appointment
             </Button>
             <Link href="/booking" passHref legacyBehavior>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-rose-600 px-8"
-              >
-                Get Custom Quote
-              </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-rose-600 px-8"
+            >
+              Get Custom Quote
+            </Button>
             </Link>
           </div>
         </div>

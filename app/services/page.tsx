@@ -181,13 +181,13 @@ export default function Services() {
                     <div className="flex gap-3">
                       <Link href="/booking" passHref legacyBehavior>
                         <Button as="a" className="flex-1 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700">
-                          Book Now
-                        </Button>
+                        Book Now
+                      </Button>
                       </Link>
                       <Link href="/booking" passHref legacyBehavior>
-                        <Button variant="outline" className="flex-1">
-                          Get Quote
-                        </Button>
+                      <Button variant="outline" className="flex-1">
+                        Get Quote
+                      </Button>
                       </Link>
                     </div>
                   </CardContent>
@@ -272,7 +272,7 @@ export default function Services() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-rose-500 to-pink-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-playfair text-4xl font-bold text-white mb-6">Ready to Experience Premium Tailoring?</h2>
+          <h2 className="font-playfair text-4xl font-bold text-white mb-6">Ready to Experience VastraCraft?</h2>
           <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
             Book your consultation today and let our expert tailors create the perfect outfit for you. Experience the
             difference of professional craftsmanship.

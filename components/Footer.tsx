@@ -18,13 +18,13 @@ export default function Footer() {
             <div className="group">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="relative">
-                  <img src="/logo2.png" alt="Premium Tailoring Logo 2" className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300 object-cover" />
+                  <img src="/logo2.png" alt="VastraCraft Logo" className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300 object-cover" />
                 </div>
                 <div>
                   <h3 className="font-playfair text-2xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent">
-                    Premium Tailoring
+                    VastraCraft
                   </h3>
-                  <p className="text-gray-400 text-sm">Premium Women's Tailoring</p>
+                  <p className="text-gray-400 text-sm">VastraCraft</p>
                 </div>
               </div>
             </div>

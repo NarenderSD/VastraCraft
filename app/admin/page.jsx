@@ -111,10 +111,10 @@ export default function AdminPage() {
             <FaBars />
           </button>
           <Image src="/logo2.png" alt="Logo" width={40} height={40} className="rounded-full shadow" />
-          <span className="text-2xl font-extrabold text-white tracking-tight font-playfair">Premium Tailoring</span>
+          <span className="text-2xl font-extrabold text-white tracking-tight font-playfair">VastraCraft</span>
           <span className="ml-2 px-2 py-1 bg-white/20 rounded text-white text-xs font-semibold hidden sm:inline">Admin Panel</span>
         </div>
-        <LogoutButton />
+      <LogoutButton />
       </header>
       <div className="flex flex-1 min-h-0 relative">
         {/* Sidebar */}
@@ -143,7 +143,7 @@ export default function AdminPage() {
                 ))}
               </div>
               <div className="mt-auto pt-8 text-xs text-rose-400 font-semibold text-center animate-fade-in">
-                &copy; {new Date().getFullYear()} Premium Tailoring<br />All rights reserved.
+                &copy; {new Date().getFullYear()} VastraCraft<br />All rights reserved.
                 <div className="mt-2 text-gray-400 text-xs">
                   Build by <a href="https://www.linkedin.com/in/narender-singh-1b7b2b1b2/" target="_blank" rel="noopener noreferrer" className="underline hover:text-rose-500 transition-colors">Narender Singh</a>
                 </div>

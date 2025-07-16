@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Premium women's tailoring services with 30+ years of experience. Expert blouse stitching, bridal wear, alterations & custom designs. Perfect Stitch, Perfect Fit.",
   keywords: "women tailoring, blouse stitching, bridal wear, silai center, custom tailoring, alterations",
-  authors: [{ name: "Premium Tailoring Center" }],
+  authors: [{ name: "VastraCraft" }],
   openGraph: {
     title: "India's Best Women's Stitching & Tailoring Center",
     description: "Premium women's tailoring services with expert craftsmanship",

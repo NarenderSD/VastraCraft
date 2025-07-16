@@ -126,7 +126,7 @@ export default function Booking() {
         }),
       })
       if (response.ok) {
-        setStep(5) // Success step
+      setStep(5) // Success step
       } else {
         throw new Error("Failed to submit booking")
       }
@@ -162,7 +162,7 @@ export default function Booking() {
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(28);
     doc.setTextColor(244, 63, 94);
-    doc.text('Premium Tailoring', pageWidth / 2, 44, { align: 'center' });
+    doc.text('VastraCraft', pageWidth / 2, 44, { align: 'center' });
     // Booking Confirmation Heading
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(20);

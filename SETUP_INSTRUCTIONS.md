@@ -1,4 +1,4 @@
-# Premium Tailoring Website Setup Instructions
+# VastraCraft Setup Instructions
 
 ## Google Sheets Integration Setup
 
@@ -142,7 +142,7 @@ For technical support or customization requests, contact the development team.
 3. Keep contact information updated
 4. Monitor website performance and security
 
-# Premium Tailoring Website – Setup Instructions
+# VastraCraft – Setup Instructions
 
 Welcome! Follow these steps to set up the project locally or for deployment.
 

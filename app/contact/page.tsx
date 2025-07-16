@@ -36,8 +36,8 @@ export default function Contact() {
         }),
       })
       if (response.ok) {
-        setIsSubmitted(true)
-        setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+      setIsSubmitted(true)
+      setFormData({ name: "", email: "", phone: "", service: "", message: "" })
       } else {
         throw new Error("Failed to submit contact form")
       }

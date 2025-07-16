@@ -204,7 +204,7 @@ function downloadChart(chart: any, unit: any, recommendedSize: any, userValues?:
   doc.setFont('helvetica', 'bold')
   doc.setFontSize(28)
   doc.setTextColor(244, 63, 94)
-  doc.text('Premium Tailoring', pageWidth / 2, 44, { align: 'center' })
+  doc.text('VastraCraft', pageWidth / 2, 44, { align: 'center' })
   // Date (left, below header color block, in white space)
   doc.setFont('helvetica', 'normal')
   doc.setFontSize(10)

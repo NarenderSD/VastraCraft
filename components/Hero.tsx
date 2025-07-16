@@ -144,27 +144,27 @@ export default function Hero() {
           {/* CTA Buttons with Enhanced Animation */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slideInUp delay-700">
             <Link href="/booking" passHref legacyBehavior>
-              <Button
+            <Button
                 as="a"
-                size="lg"
-                className="group bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-rose-500/25 transform hover:scale-105 transition-all duration-500 border-2 border-white/20 hover:border-white/40"
-              >
-                <span className="mr-2">✨</span>
+              size="lg"
+              className="group bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-rose-500/25 transform hover:scale-105 transition-all duration-500 border-2 border-white/20 hover:border-white/40"
+            >
+              <span className="mr-2">✨</span>
                 Book Now
-                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
-              </Button>
+              <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+            </Button>
             </Link>
             <Link href="/portfolio" passHref legacyBehavior>
-              <Button
+            <Button
                 as="a"
-                variant="outline"
-                size="lg"
-                className="group border-2 border-white/60 text-white hover:bg-white hover:text-rose-600 px-10 py-5 text-xl font-semibold backdrop-blur-sm hover:backdrop-blur-md transform hover:scale-105 transition-all duration-500"
-              >
-                <span className="mr-2">👗</span>
-                View Our Work
-                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
-              </Button>
+              variant="outline"
+              size="lg"
+              className="group border-2 border-white/60 text-white hover:bg-white hover:text-rose-600 px-10 py-5 text-xl font-semibold backdrop-blur-sm hover:backdrop-blur-md transform hover:scale-105 transition-all duration-500"
+            >
+              <span className="mr-2">👗</span>
+              View Our Work
+              <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+            </Button>
             </Link>
           </div>
         </div>

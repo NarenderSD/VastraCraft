@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="public/logo2.png" alt="Premium Tailoring Logo" width="180" />
+  <img src="public/logo2.png" alt="VastraCraft Logo" width="180" />
 </p>
 
-<h1 align="center">✨ Premium Tailoring Website ✨</h1>
+<h1 align="center">✨ VastraCraft ✨</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=E11D48&center=true&vCenter=true&width=700&lines=Tailoring+Reimagined+for+Modern+India;Business-Ready+Admin+Dashboard;Live+Bookings+%7C+Portfolio+%7C+Testimonials;Built+for+Growth+and+Creativity"/>
@@ -403,7 +403,7 @@ For questions, support, or business inquiries, contact [Narender Singh on Linked
 
 ## 🙏 Thanks
 
-Thank you for using and supporting Premium Tailoring Website! If you love it, please star the repo and share with others.
+Thank you for using and supporting VastraCraft! If you love it, please star the repo and share with others.
 
 ---
 
